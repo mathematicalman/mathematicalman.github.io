@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bootstrap 101 Template</title>
+        <title>Mathematicalman</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/sticky-footer.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>  
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/anjular.min.js"></script>  
         <style>
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
   .affix {
@@ -21,40 +22,40 @@
         </style>
     </head>
     <body>
-        <div class="container-fluid" style="background-color:#F44336;color:#fff;height:200px;"><!--height:200px;-->
-            <h1>Bootstrap Affix Example</h1>
-            <h3>Fixed (sticky) navbar on scroll</h3>
-            <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
-            <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+        <div class="container-fluid" style="background-color: #f5f5f5;height:100px;">
+            <h1 style="color: deepskyblue;">Mathematicalman</h1><h3 style="margin-left:210px; margin-top: -10px; color:#b92c28">portfolio</h3>
         </div>
-        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" ><!--data-offset-top="197"-->
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="97" ><!--data-offset-top="197"-->
             <div class="container">
-
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="#">WebSiteName</a>
+                    <a class="navbar-brand active" href="#"><span class="glyphicon glyphicon-home"></span>  Home</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class="dropdown">
+                        <!--<li class="active"><a href="#">Home</a></li>-->
+                        <!--<li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Page 1-1</a></li>
                                 <li><a href="#">Page 1-2</a></li>
                                 <li><a href="#">Page 1-3</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
+                        </li>-->
+                        <li><a href="#"><span class="glyphicon glyphicon-book"></span> Education</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-star"></span> Skills</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Job</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Portfolio</a></li>
+                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contacts</a></li>
+                        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -87,7 +88,7 @@
         </div>
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Place sticky footer content here.</p>
+                <p class="text-muted text-center">Copyright © 2015 Igor Sabo</p>
             </div>
         </footer>
 
