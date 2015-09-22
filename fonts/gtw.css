@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'gnutypewriter';
+    src: url('gtw.eot');
+    src: url('gtw.eot?#iefix') format('embedded-opentype'),
+         url('gtw.woff') format('woff'),
+         url('gtw.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

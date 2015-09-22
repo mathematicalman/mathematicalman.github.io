@@ -5,25 +5,45 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="css/sticky-footer.css" rel="stylesheet">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/anjular.min.js"></script>  
-        <style>
-  /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  .affix {
-      top: 0;
-      width: 100%;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
-        </style>
+        <link href="fonts/gtw.css" rel="stylesheet">
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
     </head>
     <body>
-        <div class="container-fluid" style="background-color: #f5f5f5;height:100px;">
-            <h1 style="color: deepskyblue;">Mathematicalman</h1><h3 style="margin-left:210px; margin-top: -10px; color:#b92c28">portfolio</h3>
+        <!--<div ng-app="myApp" ng-controller="PhoneListCtrl">
+            <div ng-view></div>
+            Search: <input ng-model="query">
+            Sort by:
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="age">Newest</option>
+            </select>
+            <ul>
+                <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+                    {{phone.name}}
+                    <p>{{phone.snippet}}</p>
+                </li>
+            </ul>
+            <table>
+                <tr><th>row number</th></tr>
+                <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
+            </table>
+        </div>     -->   
+        <div class="container-fluid" style="background-color:#f5f5f5;height:100px;">
+            <div class="col-sm-1">
+                <h1 style="font-family: 'GNUTypewriter'; color:#428bca">Mathematicalman</h1><!-- color:#428bca -->
+                <h3 style="font-family: 'GNUTypewriter'; color: #d9534f; margin-left:210px; margin-top: -10px">portfolio</h3><!--color: #d9534f; -->
+            </div>
+            <div style="position:absolute;right:5px; top: 0px;">
+                <button type="button" class="text-muted text-center btn btn-success btn-xs">Select your language</button>
+                <!--<button type="button" class="btn btn-success btn-xs">Eng</button>-->
+            </div>
         </div>
         <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="97" ><!--data-offset-top="197"-->
             <div class="container">
@@ -33,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand active" href="#"><span class="glyphicon glyphicon-home"></span>  Home</a>
+                    <a class="navbar-brand active" href="#/home"><span class="glyphicon glyphicon-home"></span>  Home</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
@@ -46,27 +66,29 @@
                                 <li><a href="#">Page 1-3</a></li>
                             </ul>
                         </li>-->
-                        <li><a href="#"><span class="glyphicon glyphicon-book"></span> Education</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-star"></span> Skills</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Job</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-list"></span> Portfolio</a></li>
+                        <li><a href="#/education"><span class="glyphicon glyphicon-book"></span> Education</a></li>
+                        <li><a href="#/skills"><span class="glyphicon glyphicon-star"></span> Skills</a></li>
+                        <li><a href="#/job"><span class="glyphicon glyphicon-signal"></span> Job</a></li>
+                        <!--<li><a href="#"><span class="glyphicon glyphicon-list"></span> Portfolio</a></li>-->
                         
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contacts</a></li>
+                    <li><a href="#/contacts"><span class="glyphicon glyphicon-envelope"></span> Contacts</a></li>
                         <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="page-header">
-                <h1>Example Page Header</h1>
-            </div>
-            <div class="jumbotron">
+        <div class="container" ng-app="myApp">
+            
+            <div ng-view></div>
+            <!--<div class="jumbotron">
                 <h1>My First Bootstrap Page</h1>
-                <p>Resize this responsive page to see the effect!</p> 
+                <p>Resize this responsive page to see the effect!</p>
+            </div>
+            <div class="row">
+                <h3>asdasd</h3>
             </div>
             <div class="row">
                 <div class="col-sm-3">
@@ -84,7 +106,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                 </div>
-            </div>
+            </div>-->
         </div>
         <footer class="footer">
             <div class="container">
