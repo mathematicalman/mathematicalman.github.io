@@ -1,3 +1,19 @@
 <div class="page-header">
-    <h1>{{pageHeader}}</h1>
+    <h1>{{translation.pageHeader}}</h1>
+</div>
+<div class="jumbotron">
+    <h2>{{translation.jumbotron}}</h2>    
+</div>
+<div class="row">
+    <div class="col-sm-5">
+        <img src="/img/photo.jpg" alt="..." class="img-rounded img-responsive"/>
+    </div>
+    <div class="col-sm-6" ng-repeat="description in translation.descriptions">
+        <span><b>{{description.field}}:</b> {{description.value}}</span><br/>
+    </div>
+</div>
+<div  class="row">
+    <div class="col-sm-12">
+        <i>{{translation.ps}}</i>
+    </div>
 </div>

@@ -1,3 +1,16 @@
 <div class="page-header">
-    <h1>{{pageHeader}}</h1>
+    <h1>{{translation.pageHeader}}</h1>
+</div>
+<div class="row" ng-repeat="education in translation.educations">
+    <div class="col-sm-3">
+        <span>{{education.period}}</span>
+    </div>
+    <div class="col-sm-8">
+        <span><b>{{education.position}}</b></span><br/>
+        <span>{{education.location}}</span><br/>
+        <div ng-repeat="description in education.descriptions">
+            <span>{{description}}</span><br/>
+        </div>
+        <br/>
+    </div>
 </div>

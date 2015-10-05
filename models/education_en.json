@@ -1,0 +1,29 @@
+{
+    "pageHeader": "Education",
+    "educations": [
+        {
+            "period": "1999 — 2003",
+            "position": "Lyceum № 105 , Physics and Mathematics profile",
+            "location":"Zaporozhye, Ukraine"
+        },
+        {
+            "period": "2003 — 2008",
+            "position": "Zaporizhzhya National University (ZNU)",
+            "descriptions":[
+                "Mathematical faculty",
+                "Specialty : applied mathematics",
+                "Specialization: mathematical and the software problem-oriented systems",
+                "Qualifications: master's degree (with honors)"
+            ],
+            "location":"Zaporozhye, Ukraine"
+        },
+        {
+            "period": "2008 — 2011",
+            "position": "Zaporizhzhya National University (ZNU)",
+            "descriptions":[
+                "Graduate student of Zaporizhzhya National University"
+            ],
+            "location":"Zaporozhye, Ukraine"
+        }
+    ]
+}

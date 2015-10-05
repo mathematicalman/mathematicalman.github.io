@@ -1,0 +1,74 @@
+{
+    "pageHeader": "Job",
+    "jobs": [
+        {
+            "period": "September 2012 — May 2015",
+            "companyName": "Raptor-Service",
+            "location":"Zaporozhye, Ukraine",
+            "position": "C++, PHP, C# programmer",
+            "skills": [
+                "Software development WindowsForms (C ++)",
+                "Software development WPF (C #)",
+                "Development of algorithms",
+                "Developing PHP-extensions ( extensions for PHP)",
+                "Further development and optimization of PHP-code",
+                "Development and optimization of relational databases (MySQL)",
+                "Analysis of the sites for vulnerabilities",
+                "Software development JavaFX (Java)"
+            ]
+        },
+        {
+            "period": "August 2012 — September 2012",
+            "companyName": "Freelance",
+            "location":"Ukraine",
+            "position": "Android programmer",
+            "skills": [
+                "Developing games for Android (AndEngine)"
+            ]
+        },
+        {
+            "period": "December 2011 — August 2012",
+            "companyName": "Hiwebs",
+            "location":"Zaporozhye, Ukraine",
+            "position": "PHP programmer",
+            "skills": [
+                "Check websites for vulnerabilities (pentesting)",
+                "Web development (Joomla)",
+                "Developing applications for Android",
+                "Writing different PHP-scripts"
+            ]
+        },
+        {
+            "period": "November 2008 — November 2011",
+            "companyName": "Zaporizhzhya National University (ZNU)",
+            "location":"Zaporozhye, Ukraine",
+            "position": "Teacher (graduate student)",
+            "skills": [
+                "Training curricula and teaching aids",
+                "Conducting workshops and seminars for the directions: C/C++, HTML/CSS, database, Maple",
+                "Mathematical modeling",
+                "Research work"
+            ]
+        },
+        {
+            "period": "July 2008 — November 2008",
+            "companyName": "Ukrtelecom (http://www.ukrtelecom.ua/)",
+            "location":"Zaporozhye, Ukraine",
+            "position": "Engineer/programmer",
+            "skills": [
+                "LAN Administration",
+                "Development of software in C ++",
+                "Building and upgrading PCs"
+            ]
+        },
+        {
+            "period": "September 2007 — November 2007",
+            "companyName": "IDE Group",
+            "location":"Zaporozhye, Ukraine",
+            "position": "Tester",
+            "skills": [
+                "Sites testing"
+            ]
+        }
+    ]
+}

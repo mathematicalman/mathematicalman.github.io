@@ -1,3 +1,17 @@
 <div class="page-header">
-    <h1>{{pageHeader}}</h1>
+    <h1>{{translation.pageHeader}}</h1>
+</div>
+<div class="row" ng-repeat="job in translation.jobs">
+    <div class="col-sm-3">
+        <span>{{job.period}}</span>
+    </div>
+    <div class="col-sm-8">
+        <span><b>{{job.companyName}}</b></span><br/>
+        <span>{{job.location}}</span><br/><br/>
+        <span><b>{{job.position}}</b></span><br/>
+        <div ng-repeat="skill in job.skills">
+            <span>{{skill}}</span><br/>
+        </div>
+        <br/>
+    </div>
 </div>

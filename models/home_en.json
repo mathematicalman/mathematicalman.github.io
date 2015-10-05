@@ -1,0 +1,11 @@
+{
+    "pageHeader": "Main",
+    "jumbotron": "WEB-developer / Software developer",
+    "descriptions": [
+        {"field": "Name", "value": "Sabo Igor"},
+        {"field": "Birthday", "value": "26.08.1986"},
+        {"field": "About me", "value": "responsibility, commitment, communication skills, fast learner, willing to work and develop."},
+        {"field": "Languages", "value": "russian — native, english — I read professional literature, ukrainian — I am a fluent speaker."}       
+    ],
+    "ps": "Most of the projects I can not provide because of the agreement with the customer. Therefore, at the moment, this site does not contain screenshots and descriptions of the projects that I have done."
+}

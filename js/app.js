@@ -5,10 +5,10 @@
         when('/', {
           templateUrl: 'views/home.html',
           controller: 'HomeCtrl'}).
-        when('/home', {
-          templateUrl: 'views/home.html', 
-          controller: 'HomeCtrl'
-        }).
+        //when('/home', {
+        //  templateUrl: 'views/home.html', 
+        //  controller: 'HomeCtrl'
+        //}).
         when('/education', {
           templateUrl: 'views/education.html', 
           controller: 'EducationCtrl'

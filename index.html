@@ -4,45 +4,35 @@
         <title>Mathematicalman</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">      
         <link href="css/sticky-footer.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="fonts/gtw.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png" />
         <script src="js/lib/jquery.min.js"></script>
         <script src="js/lib/bootstrap.min.js"></script>
         <script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-route.min.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
         <script src="js/controllers.js"></script>
+        <script src="js/script.js"></script>
     </head>
-    <body>
-        <!--<div ng-app="myApp" ng-controller="PhoneListCtrl">
-            <div ng-view></div>
-            Search: <input ng-model="query">
-            Sort by:
-            <select ng-model="orderProp">
-                <option value="name">Alphabetical</option>
-                <option value="age">Newest</option>
-            </select>
-            <ul>
-                <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
-                    {{phone.name}}
-                    <p>{{phone.snippet}}</p>
-                </li>
-            </ul>
-            <table>
-                <tr><th>row number</th></tr>
-                <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
-            </table>
-        </div>     -->   
+    <body  ng-app="myApp" ng-init="currentLanguage = 'en';
+            currentLanguageFullName = 'Eng'" ng-controller="MainController" >
         <div class="container-fluid" style="background-color:#f5f5f5;height:100px;">
             <div class="col-sm-1">
-                <h1 style="font-family: 'GNUTypewriter'; color:#428bca">Mathematicalman</h1><!-- color:#428bca -->
-                <h3 style="font-family: 'GNUTypewriter'; color: #d9534f; margin-left:210px; margin-top: -10px">portfolio</h3><!--color: #d9534f; -->
+                <h1 style="font-family: 'GNUTypewriter'; color:#428bca">Mathematicalman</h1>
+                <h3 style="font-family: 'GNUTypewriter'; color: #d9534f; margin-left:210px; margin-top: -10px">portfolio</h3>
             </div>
             <div style="position:absolute;right:5px; top: 0px;">
-                <button type="button" class="text-muted text-center btn btn-success btn-xs">Select your language</button>
-                <!--<button type="button" class="btn btn-success btn-xs">Eng</button>-->
+                <div class="dropdown">
+                    <button type="button" class="dropdown-toggle text-muted text-center btn btn-success btn-xs" data-toggle="dropdown">Select your language: <span ng-bind="currentLanguageFullName"></span>
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('en')">English</a></li>
+                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('ru')">Russian</a></li></ul>
+                </div>
             </div>
         </div>
         <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="97" ><!--data-offset-top="197"-->
@@ -53,66 +43,27 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand active" href="#/home"><span class="glyphicon glyphicon-home"></span>  Home</a>
+                    <a class="navbar-brand" href="#/"><span class="glyphicon glyphicon-home"></span>  {{menu.home}}</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <!--<li class="active"><a href="#">Home</a></li>-->
-                        <!--<li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Page 1-1</a></li>
-                                <li><a href="#">Page 1-2</a></li>
-                                <li><a href="#">Page 1-3</a></li>
-                            </ul>
-                        </li>-->
-                        <li><a href="#/education"><span class="glyphicon glyphicon-book"></span> Education</a></li>
-                        <li><a href="#/skills"><span class="glyphicon glyphicon-star"></span> Skills</a></li>
-                        <li><a href="#/job"><span class="glyphicon glyphicon-signal"></span> Job</a></li>
-                        <!--<li><a href="#"><span class="glyphicon glyphicon-list"></span> Portfolio</a></li>-->
-                        
+                        <li><a href="#/education"><span class="glyphicon glyphicon-book"></span> {{menu.education}}</a></li>
+                        <li><a href="#/skills"><span class="glyphicon glyphicon-star"></span> {{menu.skills}}</a></li>
+                        <li><a href="#/job"><span class="glyphicon glyphicon-signal"></span> {{menu.job}}</a></li>                       
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/contacts"><span class="glyphicon glyphicon-envelope"></span> Contacts</a></li>
-                        <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                        <li><a href="#/contacts"><span class="glyphicon glyphicon-envelope"></span> {{menu.contacts}}</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container" ng-app="myApp">
-            
+        <div class="container">           
             <div ng-view></div>
-            <!--<div class="jumbotron">
-                <h1>My First Bootstrap Page</h1>
-                <p>Resize this responsive page to see the effect!</p>
-            </div>
-            <div class="row">
-                <h3>asdasd</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Column 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Column 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                </div>
-                <div class="col-sm-4">
-                    <h3>Column 3</h3>        
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                </div>
-            </div>-->
         </div>
         <footer class="footer">
             <div class="container">
                 <p class="text-muted text-center">Copyright © 2015 Igor Sabo</p>
             </div>
         </footer>
-
     </body>
 </html>
