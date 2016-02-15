@@ -2,6 +2,17 @@
     "pageHeader": "Job",
     "jobs": [
         {
+            "period": "July 2015",
+            "companyName": "IT Dimension",
+            "location":"Zaporozhye, Ukraine",
+            "position": "PHP, Javascript programmer",
+            "skills": [
+                "Front-end development",
+                "Wordpress plugins development",
+                "Wordpress themes development"
+            ]
+        },
+        {
             "period": "September 2012 — May 2015",
             "companyName": "Raptor-Service",
             "location":"Zaporozhye, Ukraine",
