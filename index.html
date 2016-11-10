@@ -54,11 +54,17 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <button type="button" class="dropdown-toggle text-muted text-center btn btn-success btn-xs" data-toggle="dropdown">Select your language: <span ng-bind="currentLanguageFullName"></span>
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('en')">English</a></li>
-                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('ru')">Russian</a></li></ul>
+                            <a id="dropdown_languages" class="dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-expanded="false">
+                                 EN<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_languages">
+                                <li role="presentation">
+                                    <a style="cursor: pointer" ng-click="setCurrentLanguage('en')">English</a>
+                                </li>
+                                <li role="presentation">
+                                    <a style="cursor: pointer" ng-click="setCurrentLanguage('ru')">Russian</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
