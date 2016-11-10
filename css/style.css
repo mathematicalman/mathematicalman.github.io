@@ -32,7 +32,7 @@ a:focus{outline-style: none !important;}
 .navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar{background-color: #3276b1 !important;}
 .dropdown-menu, .open a, .open a:focus{background-color: #3276b1 !important;}
 .open a:hover{background-color: #428bca !important;}
-.active{background-color: #428bca !important;}
+.current{background-color: #428bca !important;}
 .content{margin-top: 70px;}
 
 .footer{background-color: #3276b1;}
