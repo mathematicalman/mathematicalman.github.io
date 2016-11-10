@@ -33,7 +33,7 @@ a:focus{outline-style: none !important;}
 .dropdown-menu, .open a, .open a:focus{background-color: #3276b1 !important;}
 .open a:hover{background-color: #428bca !important;}
 .active{background-color: #428bca !important;}
-.ng-scope{margin-top: 70px;}
+.content{margin-top: 70px;}
 
 .footer{background-color: #3276b1;}
 .footer p{color: #ffffff !important;}
