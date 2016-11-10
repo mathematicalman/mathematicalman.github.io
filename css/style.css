@@ -1,11 +1,11 @@
-.affix {
+/*.affix {
     top: 0;
     width: 100%;
 }
 
 .affix + .container-fluid {
     padding-top: 70px;
-}
+}*/
 
 .navbar, .footer {
     background-color: #3276b1;
@@ -16,9 +16,9 @@
 }
 
 .navbar a:link, .navbar a:visited, .navbar a:active{
-    color: #9d9d9d !important;
+    /*color: #9d9d9d !important;*/
 }
 
 .navbar a:hover, .navbar a.current {
-    color: white !important;
+    /*color: white !important;*/
 }
