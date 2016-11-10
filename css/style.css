@@ -1,29 +1,4 @@
-/*.affix {
-    top: 0;
-    width: 100%;
-}
-
-.affix + .container-fluid {
-    padding-top: 70px;
-}*/
 body {margin-bottom: 60px;}
-
-.navbar, .footer {
-    /*background-color: #3276b1;*/
-}
-
-.navbar a:focus {
-    /*outline: none;*/
-}
-
-.navbar a:link, .navbar a:visited, .navbar a:active{
-    /*color: #9d9d9d !important;*/
-}
-
-.navbar a:hover, .navbar a.current {
-    /*color: white !important;*/
-}
-
 .navbar{background-color: #3276b1;}
 .navbar a, .navbar-toggle {color: #ffffff !important;border-color: #ffffff;}
 .navbar a:hover{background-color: #428bca !important;}
