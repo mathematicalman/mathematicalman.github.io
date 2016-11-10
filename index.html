@@ -20,22 +20,7 @@
     </head>
     <body  ng-app="myApp" ng-init="currentLanguage = 'en';
             currentLanguageFullName = 'Eng'" ng-controller="MainController" >
-        <!--<div class="container-fluid" style="background-color:#f5f5f5;height:100px;">
-            <div class="col-sm-1">
-                <h1 style="font-family: 'GNUTypewriter'; color:#428bca">Mathematicalman</h1>
-                <h3 style="font-family: 'GNUTypewriter'; color: #d9534f; margin-left:210px; margin-top: -10px">portfolio</h3>
-            </div>
-            <div style="position:absolute;right:5px; top: 0px;">
-                <div class="dropdown">
-                    <button type="button" class="dropdown-toggle text-muted text-center btn btn-success btn-xs" data-toggle="dropdown">Select your language: <span ng-bind="currentLanguageFullName"></span>
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('en')">English</a></li>
-                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('ru')">Russian</a></li></ul>
-                </div>
-            </div>
-        </div>-->
-        <nav class="navbar navbar-default navbar-fixed-top" ><!--data-offset-top="97" data-spy="affix"-->
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -56,7 +41,7 @@
                         <li class="dropdown">
                             <a id="dropdown_languages" class="dropdown-toggle" href="" role="button" 
                                data-toggle="dropdown" aria-expanded="false">
-                                 <span ng-bind="currentLanguageFullName"></span><b class="caret"></b>
+                                 <span ng-bind="currentLanguageFullName"></span> <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_languages">
                                 <li role="presentation">
@@ -76,7 +61,7 @@
         </div>
         <footer class="footer">
             <div class="container">
-                <p class="text-muted text-center">Copyright © 2015 Igor Sabo</p>
+                <p class="text-muted text-center">Copyright © 2015 - 2016 Igor Sabo</p>
             </div>
         </footer>
     </body>
