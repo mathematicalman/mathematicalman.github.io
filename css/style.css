@@ -6,13 +6,14 @@
 .affix + .container-fluid {
     padding-top: 70px;
 }*/
+body {margin-bottom: 60px;}
 
 .navbar, .footer {
-    background-color: #3276b1;
+    /*background-color: #3276b1;*/
 }
 
 .navbar a:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .navbar a:link, .navbar a:visited, .navbar a:active{
@@ -22,3 +23,17 @@
 .navbar a:hover, .navbar a.current {
     /*color: white !important;*/
 }
+
+.navbar{background-color: #3276b1;}
+.navbar a, .navbar-toggle {color: #ffffff !important;border-color: #ffffff;}
+.navbar a:hover{background-color: #428bca !important;}
+a:focus{outline-style: none !important;}
+.navbar-toggle:hover, .navbar-toggle:focus, .icon-bar{background-color: #ffffff !important;}
+.navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar{background-color: #3276b1 !important;}
+.dropdown-menu, .open a, .open a:focus{background-color: #3276b1 !important;}
+.open a:hover{background-color: #428bca !important;}
+.active{background-color: #428bca !important;}
+.content{padding-top: 75px;}
+
+.footer{background-color: #3276b1;}
+.footer p{color: #ffffff !important;}
