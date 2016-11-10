@@ -7,6 +7,10 @@
     padding-top: 70px;
 }
 
+.navbar, .footer {
+    background-color: #3276b1;
+}
+
 .navbar a:focus {
     outline: none;
 }
