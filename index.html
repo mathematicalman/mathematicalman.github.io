@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>-->
-        <nav class="navbar navbar-default" data-spy="affix"><!--data-offset-top="97"-->
+        <nav class="navbar navbar-default navbar-fixed-top" ><!--data-offset-top="97" data-spy="affix"-->
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -49,10 +49,17 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#/education"><span class="glyphicon glyphicon-book"></span> {{menu.education}}</a></li>
                         <li><a href="#/skills"><span class="glyphicon glyphicon-star"></span> {{menu.skills}}</a></li>
-                        <li><a href="#/job"><span class="glyphicon glyphicon-signal"></span> {{menu.job}}</a></li>                       
+                        <li><a href="#/job"><span class="glyphicon glyphicon-signal"></span> {{menu.job}}</a></li>
+                        <li><a href="#/contacts"><span class="glyphicon glyphicon-envelope"></span> {{menu.contacts}}</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#/contacts"><span class="glyphicon glyphicon-envelope"></span> {{menu.contacts}}</a></li>
+                        <li class="dropdown">
+                            <button type="button" class="dropdown-toggle text-muted text-center btn btn-success btn-xs" data-toggle="dropdown">Select your language: <span ng-bind="currentLanguageFullName"></span>
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('en')">English</a></li>
+                        <li><a style="cursor: pointer" ng-click="setCurrentLanguage('ru')">Russian</a></li></ul>
+                        </li>
                     </ul>
                 </div>
             </div>
