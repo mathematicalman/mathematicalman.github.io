@@ -2,14 +2,27 @@
     "pageHeader": "Работа",
     "jobs": [
         {
-            "period": "Июль 2015",
+            "period": "Март 2016",
+            "companyName": "Noosphere",
+            "location":"Запорожье, Украина",
+            "position": "PHP-разработчик",
+            "skills": [
+                "Yii 2",
+                "Redis"
+            ]
+        },
+        {
+            "period": "Июль 2015 — Март 2016",
             "companyName": "IT Dimension",
             "location":"Запорожье, Украина",
             "position": "PHP, Javascript программист",
             "skills": [
                 "Front-end разработка",
                 "Разработка плагинов для Wordpress",
-                "Разработка тем для Wordpress"
+                "Разработка тем для Wordpress",
+                "Яндекс API",
+                "Facebook API",
+                "Вконтакте API"
             ]
         },
         {
