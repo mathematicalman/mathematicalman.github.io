@@ -33,6 +33,12 @@
         "Mathematical Modeling",
         "Development of algorithms",
         "Git",
-        "SVN"
+        "SVN",
+        "Yandex API",
+        "Facebook API",
+        "Vkontakte API",
+        "Yii 2",
+        "Redis",
+        "PSR 2.0"
     ]
 }
