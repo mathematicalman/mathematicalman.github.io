@@ -2,14 +2,27 @@
     "pageHeader": "Job",
     "jobs": [
         {
-            "period": "July 2015",
+            "period": "March 2016",
+            "companyName": "Noosphere",
+            "location":"Zaporozhye, Ukraine",
+            "position": "PHP-developer",
+            "skills": [
+                "Yii 2",
+                "Redis"
+            ]
+        },
+        {
+            "period": "July 2015 — March 2016",
             "companyName": "IT Dimension",
             "location":"Zaporozhye, Ukraine",
             "position": "PHP, Javascript programmer",
             "skills": [
                 "Front-end development",
                 "Wordpress plugins development",
-                "Wordpress themes development"
+                "Wordpress themes development",
+                "Yandex API",
+                "Facebook API",
+                "Vkontakte API"
             ]
         },
         {
